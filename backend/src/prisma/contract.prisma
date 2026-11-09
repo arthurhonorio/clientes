@@ -5,8 +5,8 @@ model Customer {
   name      String
   email     String   @unique
   status    Bool
-  createdAt Date @onCreate(now())
-  updatedAt Date @onUpdate(now())
+  created_at Date @onCreate(now())
+  updated_at Date @onUpdate(now())
 
   @@map("customers")
 }
